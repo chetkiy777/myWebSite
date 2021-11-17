@@ -1,0 +1,231 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+    <title>My Web Site</title>
+</head>
+<body>
+    <div class="wrapper">
+
+<!--        Experience-section-->
+
+        <section class="exp-section">
+
+            <div class="photo-container">
+                <img src="./image/my-photo.jpg" alt="photo" class="photo">
+            </div>
+
+
+            <div class="links">
+                <a href="https://www.linkedin.com/in/igor-gladkiy-530b211b3/" class="my-link">
+                    <img src="./image/icons/linkedin-icon.svg" alt="my linkedin link" class="linkedIn">
+                </a>
+
+                <a href="https://www.facebook.com/profile.php?id=100004333358955" class="my-link">
+                    <img src="./image/icons/fb-icon.svg" alt="my facebook link" class="fb-link">
+                </a>
+            </div>
+            <div class="projects">
+                <p class="works">
+                    8 готовых проэктов
+                </p>
+                <p class="exp">
+                    1 год опыта
+                </p>
+            </div>
+            <div class="tech-skills-icon">
+                <img src="./image/icons/react-icon.svg" alt="react" class="skill">
+                <img src="./image/icons/js-icon.svg" alt="js" class="skill">
+                <img src="./image/icons/nodejs-icon.svg" alt="nodejs" class="skill">
+            </div>
+            <a href="https://github.com/chetkiy777?tab=repositories" class="github-link">Мои работы</a>
+        </section>
+
+<!--        Info-section-->
+
+        <section class="info-section">
+            <h2>Я - Игорь Гладкий</h2>
+            <h1>Делаю сайты, телеграм-боты, работаю с qr-code</h1>
+            <p class="my-location">Живу в Киеве</p>
+            <p class="my-work-style">Работаю удаленно</p>
+
+            <p class="about-me">Я, человек-генератор идей и отличного настроения!</p>
+
+            <div>
+                <p class="my-tech-skills-title">Умею</p>
+                <ul class="my-skill-list">
+                    <li class="my-tech-skill-item">
+                        <p class="my-skill-text">
+                            Junior React-Redux developer;
+                        </p>
+                    </li>
+
+                    <li class="my-tech-skill-item">
+                        <p class="my-skill-text">
+                            Junior Back End developer
+                        </p>
+                    </li>
+
+                    <li class="my-tech-skill-item">
+                        <p class="my-skill-text">
+                            Имею чувство прекрасного;
+                        </p>
+                    </li>
+
+                    <li class="my-tech-skill-item">
+                        <p class="my-skill-text">
+                            Находчивый и идейный;
+                        </p>
+                    </li>
+
+                    <li class="my-tech-skill-item">
+                        <p class="my-skill-text">
+                            Могу создать настроение в комманде;
+                        </p>
+                    </li>
+
+                    <li class="my-tech-skill-item">
+                        <p class="my-skill-text">
+                            Есть навыки работы с Corel , Photoshop
+                        </p>
+                    </li>
+
+                </ul>
+            </div>
+        </section>
+
+<!--        Calculate-section-->
+
+        <section class="calculate-section">
+            <form action="#" class="calculate-form" name="Просчет проэкта" data-netlify="true" id="calculate-form">
+
+                <h4 class="calculator-title">Расчет стоимости работ</h4>
+
+                <div class="project-type-container">
+                    <label for="project-type" class="form-field-title">Тип сайта</label>
+                    <select name="project-type" id="project-type">
+                        <option value="landing-page" selected>Landing Page</option>
+                        <option value="online-store">Online Store</option>
+                        <option value="web-application">Web Application</option>
+                        <option value="mobile-application">Mobile Application</option>
+
+                    </select>
+                </div>
+
+                <div class="calculate-form-work-type-block">
+                    <p class="form-field-title">Типы работ</p>
+
+                    <div class="calculate-form-work-type-item">
+                        <input type="checkbox" name="project-managment" id="project-managment" class="calculate-form-work-type-checkbox">
+                        <label for="project-managment" class="calculate-form-work-type-title">Project Managment</label>
+                    </div>
+
+                    <div class="calculate-form-work-type-item">
+                        <input type="checkbox" name="design" id="design" class="calculate-form-work-type-checkbox">
+                        <label for="design" class="calculate-form-work-type-title">Design</label>
+                    </div>
+
+                    <div class="calculate-form-work-type-item">
+                        <input type="checkbox" name="development" id="development" class="calculate-form-work-type-checkbox">
+                        <label for="development" class="calculate-form-work-type-title">Development</label>
+                    </div>
+
+                    <div class="calculate-form-work-type-item">
+                        <input type="checkbox" name="qa" id="qa" class="calculate-form-work-type-checkbox">
+                        <label for="qa" class="calculate-form-work-type-title">QA</label>
+                    </div>
+                </div>
+
+                <div class="calculate-form-summ-container">
+                    <p class="form-field-title">Стоимость</p>
+                    <p class="calculate-form-summ" ><span class="calculator-form-char">$</span><span id="summ">0</span></p>
+                </div>
+
+                <div class="calculate-form-btn-container">
+                    <button class="calculate-form-btn" type="submit">Отправить запрос</button>
+                </div>
+
+                <input type="hidden" name="Email">
+
+            </form>
+        </section>
+
+        <!--        Contacts-block-->
+
+            <div class="contacts">
+                <img src="./image/icons/telegram-icon.svg" alt="telegram" class="contacts_icon">
+                <img src="./image/icons/viber-icon.svg" alt="viber" class="contacts_icon">
+                <img src="./image/icons/phone-icon.svg" alt="phone" class="contacts_icon">
+
+            <span class="contacts-phone-number">380 97 787 54 04</span>
+            </div>
+        </div>
+
+    <!-- Modals - Action section-->
+
+    <div class="modals-block" id="modal-email">
+        <div class="modal-container">
+            <button class="modals-close-icon-btn">
+                <img src="./image/icons/close-icon.svg" alt="close-icon class="modals-close-icon"/>
+            </button>
+
+            <div class="modals-mail-icon-container">
+                <img src="./image/icons/mail-icon.svg" class="modals-mail-icon">
+            </div>
+
+           <h4 class="modals-title">
+               Я свяжусь с вами на протяжении ближаййшего часа
+           </h4>
+
+            <!-- user-email input form -->
+
+           <form action="#" class="modals-active-form" id="modal-mail-form">
+               <div class="email-input-container">
+                   <p class="modals-user-email-title">Email</p>
+
+                   <input type="email" class="modals-user-email" placeholder="укажите email" id="user-mail"/>
+
+                    <p class="email-error-message">Проверьте email</p>
+
+                   <div class="modals-btn-container">
+                       <button type="submit" class="modals-btn">Отправить</button>
+                   </div>
+
+
+               </div>
+           </form>
+
+        </div>
+    </div>
+
+        <!--        Modals - success section-->
+
+    <div class="modals-block" id="modal-success">
+        <div class="modal-container modals-success-container">
+            <button class="modals-close-icon-btn">
+                <img src="./image/icons/close-icon.svg" alt="close-icon" class="modals-close-icon"/>
+            </button>
+
+            <img src="./image/icons/success-icon.svg" alt="success-icon" class="modals-success-icon">
+
+            <p class="modals-success-message">
+                Всё отлично! <br>
+                Запрос отправлен!
+            </p>
+
+
+        </div>
+    </div>
+
+
+    <script type="text/javascript" src="script.js"></script>
+</body>
+</html>
